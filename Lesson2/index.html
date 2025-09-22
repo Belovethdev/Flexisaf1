@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase</title>
+  <link rel="stylesheet" href="L2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">BeSmart</h2>
+      <!-- Hamburger Button -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to BeSmart</h1>
+        <p>Discover a world of meticulously curated products, where exceptional quality meets unbeatable value, and every purchase is designed to elevate your daily life and bring you joy.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About BeSmart</h2>
+      <p>
+        BeSmart is your one-stop online shop for quality products at the best prices.
+        From electronics to fashion and furniture, we bring you a wide range of 
+        collections designed to fit your lifestyle and budget.
+      </p>
+      <p>
+        Our mission is simple: to make shopping smarter, easier, and more affordable. 
+        With secure payment options, fast delivery, and customer-first service, 
+        BeSmart is the smarter way to shop.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="../assets/images/wall2.jpg" alt="About ShopSmart">
+    </div>
+  </div>
+</section>
+
+<!-- Why Shop With Us Section -->
+<section class="features" id="features">
+  <h2>Why Shop With BeSmart?</h2>
+  <div class="features-container">
+    <div class="feature-card">
+      <img src="../assets/images/location.png" alt="Wide Variety">
+      <h3>Wide Variety</h3>
+      <p>From electronics to fashion and home essentials, find everything in one place.</p>
+    </div>
+    <div class="feature-card">
+      <img src="../assets/images/message.png" alt="Best Deals">
+      <h3>Best Deals</h3>
+      <p>Enjoy regular discounts, flash sales, and unbeatable online offers.</p>
+    </div>
+    <div class="feature-card">
+      <img src="../assets/images/call.png" alt="Fast & Reliable Delivery">
+      <h3>Fast & Reliable Delivery</h3>
+      <p>Get your orders delivered quickly, safely, and track them in real time.</p>
+    </div>
+    <div class="feature-card">
+      <img src="../assets/images/question.png" alt="Secure Shopping">
+      <h3>Secure Shopping</h3>
+      <p>Shop confidently with safe payment methods and buyer protection guaranteed.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Search + Filter -->
+  <section class="controls">
+    <input type="text" id="searchBox" placeholder="Search products...">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('fashion')">Fashion</button>
+    <button onclick="filterProducts('furniture')">Furniture</button>
+  </section>
+
+  <!-- Product Grid -->
+    <section id="products" class="product-grid">
+    <!-- Products will be injected here by JavaScript -->
+    </section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Reach out for inquiries or support.</p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>Email:</strong> support@besmart.com</p>
+      <p><strong>Phone:</strong> +234 800 123 4567</p>
+      <p><strong>Address:</strong> 123 Market Street, Lagos</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <h3>Besmart</h3>
+    <p>Your trusted online shopping platform.</p>
+
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+      &copy; 2025 Besmart. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+  <script src="L2.js"></script>
+</body>
+</html>
